@@ -1,0 +1,265 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+/* Kontainer umum */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #201d1d;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+}
+
+header h1 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    font-size: 22px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Tentang Saya */
+#about {
+    padding: 50px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1{
+    background: rgb(63, 1, 63);
+    margin-top: -20px;
+}
+
+.section-2{
+    background: rgb(83, 1, 83);
+}
+
+.section-3{
+    background: rgb(63, 1, 63);
+    margin-bottom: -30px;
+}
+.about-photo {
+    margin-right: 20px;
+    padding: 50px 100px 30px 10px;
+}
+
+.tentang{
+    margin: 20px;
+}
+
+.web{
+    margin: 10px;
+}
+
+.about-photo img {
+    border-radius: 50%;
+    width: 275px;
+    height: 375px;
+    object-fit: cover;
+    position: relative;
+    border: 20px solid  rgb(83, 1, 83);
+    margin: 0 20px 10px 0;
+
+}
+
+
+.about-text {
+    max-width: 600px;
+    color: white;
+}
+.about-text p{
+   color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.about-text h2 {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 60px;
+    
+}
+
+.about-text h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Proyek */
+#projects {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.project-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color: rgb(63, 1, 63);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+   
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.project-card p{
+    color: white;
+    margin-top: 15px;
+}
+/* Form Kontak */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.icon-container {
+    display: flex; 
+    gap: 10px;
+    
+}
+.wa{
+    width: 55px;
+    margin: 10px;
+}
+.ig{
+    width: 70px;
+    margin: 2px;
+}
+.email{
+    width: 60px;
+    margin: 5px 0 0 10px;
+    
+    
+    
+}
+
+.kontak{
+    padding: 20px;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+form label {
+    margin: 10px 0 5px;
+}
+
+
+form textarea {
+    padding: 10px;
+    margin: 5px 0 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px ;
+    background-color: #cacaca;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(112, 1, 112);
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 10px 0 40px 0;
+}
+
+form button:hover {
+    background-color: #363636;
+}
+
+/* Footer */
+footer {
+    background-color: 
+    #201d1d;
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px;
+    margin-top: 20px;
+}
+
+/* Text AUto */
+
+.typing-container {
+    font-size: 24px; /* Font size */
+    border-right: 2px solid black; /* Cursor effect */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    width: 0; /* Start with width 0 */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite; /* Typing and blinking cursor */
+}
+
+@keyframes typing {
+    from {
+        width: 0; /* Start with width 0 */
+    }
+    to {
+        width: 55%; /* End with full width */
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Invisible cursor */
+    }
+    50% {
+        border-color: rgb(255, 255, 255); /* Visible cursor */
+    }
+}
+
+.typing-container span{
+    margin: 10px ;
+}
